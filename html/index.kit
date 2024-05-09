@@ -9,10 +9,38 @@
 </head>
 
 <body>
-    <!-- @include 'nav.kit' -->
-  
+    <nav class="nav">
+        <div class="container">
+            <i class="burger-btn fa-solid fa-bars d-md-none"></i>
+            <ul
+                class="nav-links d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-md-5">
+                <i class="close-burger fa-regular fa-circle-xmark d-md-none"></i>
+
+                <li class="li-item"><a class="nav-item" href="#">Home</a></li>
+                <li class="li-item"><a class="nav-item" href="#">O mnie</a></li>
+                <li class="li-item"><a class="nav-item" href="#">Galeria</a></li>
+                <li class="li-item"><a class="nav-item" href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero-img">
+        <div class="hero-shadow"></div>
+        <div class="hero-text d-flex flex-column text-center align-items-center">
+            <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">Gabriela Słowik
+                <span class="span">Art</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1000">Pracownia <span class="span">art</span>ystyczna</p>
+        </div>
+    </header>
+
+
+    <main></main>
+
     <!-- @include 'footer.kit' -->
-    <script src="/dist/js/script.min.js"></script>
+    <!-- @include 'scripts.kit' -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
