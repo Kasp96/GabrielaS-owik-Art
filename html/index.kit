@@ -67,23 +67,25 @@
             <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
 
 
-            <form class="form">
-                <div class="input-container d-flex flex-column">
-                    <label class="name-label" for="name">Imię</label>
-                    <input class="name-input" type="text">
+            <form class="form d-flex flex-column gap-1">
+
+                <div class="input-box d-flex">
+                    <input class="name-input" type="text" required="required">
+                    <span class="name-label">Imię*</span>
                 </div>
-                <div class="input-container d-flex flex-column">
-                    <label class="email-label" for="email">E-mail</label>
-                    <input type="email" class="mail-input">
+
+                <div class="input-box d-flex flex-column">
+                    <input class="mail-input" type="text" required="required">
+                    <span class="mail-label">Adres e-mail*</span>
                 </div>
+
+
                 <div class="d-flex flex-column">
-                    <!-- <label for="message">Treść wiadomości:</label> -->
-                    <!-- czy to musi byc jezeli jest puste? -->
+
                     <textarea id="message" placeholder="Wpisz tekst wiadomości"></textarea>
                 </div>
                 <button class="button">Wyślij</button>
             </form>
-
         </section>
     </main>
 
