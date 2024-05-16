@@ -22,10 +22,11 @@
 <body>
     <nav class="nav">
         <div class="container">
-            <div class="languages d-flex">
-                <p class="lang pl">PL</p>
-                <p class="lang en">EN</p>
-            </div>
+            <p class="languages">
+                <span class="lang pl">pl</span>
+                <span class="lang">|</span>
+                <span class="lang en">en</span>
+            </p>
             <i class="burger-btn open-burger fa-solid fa-bars d-md-none"></i>
             <ul
                 class="nav-links d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-md-5">
@@ -76,26 +77,24 @@
         </section>
         <section class="section contact">
             <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
-
-
             <form class="form d-flex flex-column gap-1">
-
                 <div class="input-box d-flex">
                     <input class="name-input" type="text" required="required">
-                    <span class="name-label">Imię*</span>
+                    <label class="name-label" for="name">Imię*</label>
                 </div>
-
                 <div class="input-box d-flex flex-column">
-                    <input class="mail-input" type="text" required="required">
-                    <span class="mail-label">Adres e-mail*</span>
-                </div>
+                    <input class="mail-input" type="email" required="required" placeholder="">
+                    <label class="mail-label" for="email">Adres e-mail*</label>
 
+                </div>
 
                 <div class="d-flex flex-column">
-
-                    <textarea id="message" placeholder="Wpisz tekst wiadomości"></textarea>
+                    <textarea id="message" class="text-area" placeholder="Wiadomość"></textarea>
                 </div>
-                <button class="button">Wyślij</button>
+
+                <button class="button">
+                    Wyślij
+                </button>
             </form>
         </section>
     </main>
@@ -108,7 +107,7 @@
             <p> <i class="fa-regular fa-envelope"></i> email@example.com </p>
         </div>
         <div class="social-media d-flex justify-content-center gap-4 w-100">
-            <a href="https://www.facebook.com/profile.php?id=100001633704332">
+            <a href="https://www.facebook.com/gabrielaslowik.art">
                 <i class="fa-brands fa-square-facebook display-6"></i>
             </a>
             <a href="https://www.instagram.com/gabrielaslowik.art/">
