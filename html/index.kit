@@ -79,31 +79,39 @@
         </section>
         <section class="section contact">
             <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
-
-            <p class="text contact-description">Jeśli coś w mojej sztuce przykuło Twoją uwagę i jesteś zainteresowany
-                kupnem lub masz pytania,
-                zapraszam do
-                kontaktu. Wypełnij poniższy formularz, a chętnie odpowiem na Twoje wiadomości.</p>
-
-            <form class="form d-flex flex-column gap-1">
-                <div class="input-box d-flex">
-                    <input class="name-input" type="text" required="required">
-                    <label class="name-label" for="name">Imię*</label>
+            <div class="contact-container d-md-flex justify-content-evenly">
+                <div class="contact-left">
+                    <h3 class="contact-heading">Drogi odbiorco,</h3>
+                    <p class="text contact-description">jeśli coś w mojej sztuce przykuło Twoją uwagę i jesteś
+                        zainteresowany
+                        kupnem moich dzieł lub masz pytania,
+                        zapraszam do
+                        kontaktu. Wypełnij poniższy formularz, a chętnie odpowiem na Twoje wiadomości.</p>
                 </div>
-                <div class="input-box d-flex flex-column">
-                    <input class="mail-input" type="email" required="required" placeholder="">
-                    <label class="mail-label" for="email">Adres e-mail*</label>
+                <div class="contact-right">
+                    <form class="form d-flex flex-column gap-1">
+                        <div class="input-box d-flex">
+                            <input class="name-input" type="text" required="required">
+                            <label class="name-label" for="name">Imię*</label>
+                        </div>
+                        <div class="input-box d-flex flex-column">
+                            <input class="mail-input" type="email" required="required" placeholder="">
+                            <label class="mail-label" for="email">Adres e-mail*</label>
 
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <textarea id="message" class="text-area" placeholder="Wiadomość"></textarea>
+                        </div>
+
+                        <button class="button">
+                            Wyślij
+                        </button>
+                    </form>
                 </div>
+            </div>
 
-                <div class="d-flex flex-column">
-                    <textarea id="message" class="text-area" placeholder="Wiadomość"></textarea>
-                </div>
 
-                <button class="button">
-                    Wyślij
-                </button>
-            </form>
         </section>
     </main>
 
