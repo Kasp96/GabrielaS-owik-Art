@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -23,18 +23,18 @@
     <nav id="1" class="nav">
         <div class="container">
             <p class="languages">
-                <span class="lang pl">pl</span>
+                <span id="pl" class="lang pl">pl</span>
                 <span class="lang">|</span>
-                <span class="lang en">en</span>
+                <span id="en" class="lang en">en</span>
             </p>
             <i class="burger-btn open-burger fa-solid fa-bars d-md-none"></i>
             <ul
                 class="nav-links d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-md-5">
                 <i class="burger-btn close-burger fa-regular fa-circle-xmark d-md-none"></i>
                 <li class="li-item"><a class="nav-item" href="#">Home</a></li>
-                <li class="li-item"><a class="nav-item" href="#2">Galeria</a></li>
-                <li class="li-item"><a class="nav-item" href="#3">O mnie</a></li>
-                <li class="li-item"><a class="nav-item" href="#4">Kontakt</a></li>
+                <li class="li-item"><a id="nav-gallery" class="nav-item" href="#2">Galeria</a></li>
+                <li class="li-item"><a id="nav-aboutme" class="nav-item" href="#3">O mnie</a></li>
+                <li class="li-item"><a id="nav-contact" class="nav-item" href="#4">Kontakt</a></li>
             </ul>
         </div>
         <!-- DOROBIC STRZALKE W HERO IMG -->
@@ -46,14 +46,18 @@
                 Gabriela Słowik
                 <span class="span">Art</span>
             </h1>
-            <p class="main-description" data-aos="fade-up" data-aos-duration="1000">Pracownia <span
-                    class="span">art</span>ystyczna</p>
+            <p id="main-description" class="main-description" data-aos="fade-up" data-aos-duration="1000">
+                Pracownia
+                <span class="span">art</span>ystyczna
+            </p>
+            <!-- usunac spana bo nie jest tu potrzebny -->
+            <!-- co to znaczy ze strona ma sie indexowac? -->
         </div>
     </header>
 
     <main>
         <section id="2" class="section my-art">
-            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Moja sztuka</h2>
+            <h2 id="art-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Moja sztuka</h2>
             <div class="artwork-container d-flex justify-content-evenly flex-wrap">
                 <div class="artwork-box">
                     <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
@@ -107,7 +111,7 @@
         </section>
 
         <section id="3" class="section about-me">
-            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">O mnie</h2>
+            <h2 id="aboutme-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">O mnie</h2>
             <div class="container p-0">
                 <div class="row m-0">
                     <div class="col col-12 col-md-6 d-md-flex">
@@ -130,11 +134,12 @@
             </div>
         </section>
         <section id="4" class="section contact">
-            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
+            <h2 id="contact-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
             <div class="contact-container d-md-flex justify-content-evenly">
                 <div class="contact-left">
-                    <h3 class="contact-heading">Drogi odbiorco,</h3>
-                    <p class="text contact-description">jeśli coś w mojej sztuce przykuło Twoją uwagę i jesteś
+                    <h3 id="form-heading" class="contact-heading">Drogi odbiorco,</h3>
+                    <p id="contact-description" class="text contact-description">jeśli coś w mojej sztuce przykuło Twoją
+                        uwagę i jesteś
                         zainteresowany
                         kupnem moich dzieł lub masz pytania,
                         zapraszam do
@@ -144,12 +149,14 @@
                     <form action="https://formsubmit.io/send/kacperwach96@gmail.com" method="POST"
                         class="form d-flex flex-column gap-1">
                         <div class="input-box d-flex">
-                            <input class="input name-input position-relative" type="text" required="required" name="name">
+                            <input class="input name-input position-relative" type="text" required="required"
+                                name="name">
                             <label class="name-label" for="name">Imię*</label>
                             <p class="error name-error position-absolute">error</p>
                         </div>
                         <div class="input-box d-flex flex-column">
-                            <input class="input mail-input position-relative" type="email" required="required" placeholder="" name="email">
+                            <input class="input mail-input position-relative" type="email" required="required"
+                                placeholder="" name="email">
                             <label class="mail-label" for="email">Adres e-mail*</label>
                             <p class="error name-error position-absolute">error</p>
 
