@@ -1,0 +1,17 @@
+{
+	"mainDescription": "Art Studio",
+	"navGallery": "Gallery",
+	"navAboutMe": "About Me",
+	"navContact": "Contact",
+	"myArt": "My Art",
+	"aboutMe": "About Me",
+	"contact": "Contact",
+	"artTitle": "Artwork Title",
+	"madeOf": "Medium",
+	"contactHeading": "Dear Viewer,",
+	"contactDescription": "if something in my art has caught your attention and you are interested in purchasing my works or have questions, feel free to contact me. Fill out the form below, and I will gladly respond to your messages.",
+	"nameInput": "Name*",
+	"emailInput": "Email Address*",
+	"message": "Message",
+	"button": "Send"
+}

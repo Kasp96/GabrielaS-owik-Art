@@ -35,15 +35,13 @@
                 Gabriela Słowik
                 <span class="span">Art</span>
             </h1>
-            <p id="main-description" class="main-description" data-aos="fade-up" data-aos-duration="1000">
-                Pracownia
-                <span class="span">art</span>ystyczna
+            <p class="main-description" data-aos="fade-up" data-aos-duration="1000">
+                Pracownia artystyczna
             </p>
-            <!-- usunac spana bo nie jest tu potrzebny -->
+
             <!-- co to znaczy ze strona ma sie indexowac? -->
         </div>
     </header>
-
     <main>
         <section id="2" class="section my-art">
             <h2 id="art-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Moja sztuka</h2>
@@ -135,29 +133,28 @@
                         kontaktu. Wypełnij poniższy formularz, a chętnie odpowiem na Twoje wiadomości.</p>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formsubmit.io/send/kacperwach96@gmail.com" method="POST"
-                        class="form d-flex flex-column gap-1">
+                    <form class="form d-flex flex-column gap-1" novalidate>
                         <div class="input-box d-flex">
-                            <input class="input name-input position-relative" type="text" required="required"
-                                name="name">
+                            <input class="input name-input position-relative" type="text" name="name" required>
                             <label class="name-label" for="name">Imię*</label>
                             <p class="error name-error position-absolute">error</p>
                         </div>
                         <div class="input-box d-flex flex-column">
-                            <input class="input mail-input position-relative" type="email" required="required"
-                                placeholder="" name="email">
+                            <input class="input mail-input position-relative" type="email" placeholder="" name="email">
                             <label class="mail-label" for="email">Adres e-mail*</label>
-                            <p class="error name-error position-absolute">error</p>
+                            <p class="error  name-error position-absolute">error</p>
 
                         </div>
 
-                        <div class="d-flex flex-column">
-                            <textarea id="message" class="text-area" placeholder="Wiadomość" name="comment"></textarea>
+                        <div class="input-box d-flex flex-column">
+                            <textarea id="message" class="text-area" name="comment"></textarea>
+                            <label  class="textarea-label" for="message">Wiadomość</label>
                         </div>
 
-                        <button class="button" type="submit">
+                        <button type="button" class="button">
                             Wyślij
                         </button>
+                        <!-- tu musi byc type submit -->
                     </form>
                 </div>
             </div>

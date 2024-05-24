@@ -1,0 +1,17 @@
+{
+	"mainDescription": "Pracownia artystyczna",
+	"navGallery": "Galeria",
+	"navAboutMe": "O mnie",
+	"navContact": "Kontakt",
+	"myArt": "Moja sztuka",
+	"aboutMe": "O mnie",
+	"contact": "Kontakt",
+	"artTitle": "Tytuł obrazu",
+	"madeOf": "rodzaj wykonania",
+	"contactHeading": "Drogi odbiorco,",
+	"contactDescription": "jeśli coś w mojej sztuce przykuło Twoją uwagę i jesteś zainteresowany kupnem moich dzieł lub masz pytania, zapraszam do kontaktu. Wypełnij poniższy formularz, a chętnie odpowiem na Twoje wiadomości.",
+	"nameInput": "Imię*",
+	"emailInput": "Adres e-mail*",
+	"message": "Wiadomość",
+	"button": "Wyślij"
+}
