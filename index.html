@@ -14,13 +14,16 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Allura&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Calligraffitti&family=Caveat:wght@400..700&family=Damion&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fuzzy+Bubbles:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap"
     rel="stylesheet">
+<link rel="stylesheet" href="./dist/css/lightbox.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="./dist/js/lightbox-plus-jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/56945589b3.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body>
-    <nav id="1" class="nav">
+    <nav class="nav">
         <div class="container">
             <p class="languages">
                 <span id="pl" class="lang pl">pl</span>
@@ -32,9 +35,9 @@
                 class="nav-links d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-md-5">
                 <i class="burger-btn close-burger fa-regular fa-circle-xmark d-md-none"></i>
                 <li class="li-item"><a class="nav-item" href="#">Home</a></li>
-                <li class="li-item"><a id="nav-gallery" class="nav-item" href="#2">Galeria</a></li>
-                <li class="li-item"><a id="nav-aboutme" class="nav-item" href="#3">O mnie</a></li>
-                <li class="li-item"><a id="nav-contact" class="nav-item" href="#4">Kontakt</a></li>
+                <li class="li-item"><a id="nav-gallery" class="nav-item" href="#gallery">Galeria</a></li>
+                <li class="li-item"><a id="nav-aboutme" class="nav-item" href="#aboutme">O mnie</a></li>
+                <li class="li-item"><a id="nav-contact" class="nav-item" href="#contact">Kontakt</a></li>
             </ul>
         </div>
         <!-- DOROBIC STRZALKE W HERO IMG -->
@@ -51,56 +54,65 @@
             </p>
 
             <!-- co to znaczy ze strona ma sie indexowac? -->
+            <!-- minifikowanie obrazow nie dziala, trzeba przekminic -->
         </div>
     </header>
     <main>
-        <section id="2" class="section my-art">
+        <section id="gallery" class="section my-art">
             <h2 id="art-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Moja sztuka</h2>
-            <div class="artwork-container d-flex justify-content-evenly flex-wrap">
+            <div class="artwork-container d-flex justify-content-center align-items-center flex-wrap gap-5">
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
                 </div>
                 <div class="artwork-box">
-                    <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork">
+                    <a href="./img/gallery-image-1.jpg" data-lightbox="mygallery">
+                        <img class="artwork-img" src="./img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
                     <p class="artwork-price">500 zł </p>
@@ -108,7 +120,7 @@
             </div>
         </section>
 
-        <section id="3" class="section about-me">
+        <section id="aboutme" class="section about-me">
             <h2 id="aboutme-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">O mnie</h2>
             <div class="container p-0">
                 <div class="row m-0">
@@ -131,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section id="4" class="section contact">
+        <section id="contact" class="section contact">
             <h2 id="contact-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Kontakt</h2>
             <div class="contact-container d-md-flex justify-content-evenly">
                 <div class="contact-left">
@@ -148,18 +160,18 @@
                         <div class="input-box d-flex">
                             <input class="input name-input position-relative" type="text" name="name" required>
                             <label class="name-label" for="name">Imię*</label>
-                            <p class="error name-error position-absolute">error</p>
+                            <p class="error name-error position-absolute"></p>
                         </div>
                         <div class="input-box d-flex flex-column">
                             <input class="input mail-input position-relative" type="email" placeholder="" name="email">
                             <label class="mail-label" for="email">Adres e-mail*</label>
-                            <p class="error  name-error position-absolute">error</p>
+                            <p class="error  name-error position-absolute"></p>
 
                         </div>
 
                         <div class="input-box d-flex flex-column">
                             <textarea id="message" class="text-area" name="comment"></textarea>
-                            <label  class="textarea-label" for="message">Wiadomość</label>
+                            <label class="textarea-label" for="message">Wiadomość</label>
                         </div>
 
                         <button type="button" class="button">
@@ -199,6 +211,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
 <script src="./dist/js/translation.min.js"></script>
 <script src="./dist/js/script.min.js"></script>
     <script>
