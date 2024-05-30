@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
-<body>
+<body class="body">
     <nav class="nav">
         <div class="container">
             <p class="languages">
@@ -34,7 +34,7 @@
             <ul
                 class="nav-links d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center gap-md-5">
                 <i class="burger-btn close-burger fa-regular fa-circle-xmark d-md-none"></i>
-                <li class="li-item"><a class="nav-item" href="#">Home</a></li>
+                <li class="li-item"><a class="nav-item active-section" href="#home">Home</a></li>
                 <li class="li-item"><a id="nav-gallery" class="nav-item" href="#gallery">Galeria</a></li>
                 <li class="li-item"><a id="nav-aboutme" class="nav-item" href="#aboutme">O mnie</a></li>
                 <li class="li-item"><a id="nav-contact" class="nav-item" href="#contact">Kontakt</a></li>
@@ -42,7 +42,7 @@
         </div>
         <!-- DOROBIC STRZALKE W HERO IMG -->
     </nav>
-    <header class="hero-img">
+    <header id="home" class="section hero-img mt-0">
         <div class="hero-shadow"></div>
         <div class="hero-text d-flex flex-column text-center align-items-center">
             <h1 class="main-heading" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
@@ -59,7 +59,7 @@
             <h2 id="art-heading" class="section-title" data-aos="fade-down" data-aos-duration="1000">Moja sztuka</h2>
             <div class="artwork-container d-flex justify-content-center align-items-center flex-wrap gap-5">
                 <div class="artwork-box">
-                    <a href="/dist/img/gallery-image-1.jpg" data-lightbox="mygallery" data-title="Tytuł obrazu">
+                    <a href="./dist/img/gallery-image-1.jpg" data-lightbox="mygallery" data-title="Tytuł obrazu">
                         <img class="artwork-img" src="/dist/img/gallery-image-1.jpg" alt="artwork"></a>
                     <h3 class="artwork-title">Tytuł obrazu</h3>
                     <p class="artwork-medium">rodzaj wykonania/materiału</p>
@@ -138,7 +138,7 @@
                             labore enim porro vel quae eaque debitis similique quam.</p>
                     </div>
                     <div class="col col-12 col-md-6 p-0 ">
-                        <img class="foto" src="/dist/img/aboutme-big.jpg" alt="About me photo">
+                        <img class="foto" src="dist/img/aboutme-big.jpg" alt="About me photo">
                     </div>
                 </div>
             </div>
